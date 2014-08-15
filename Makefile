@@ -144,7 +144,7 @@ configcheck: sanitycheck
 	@echo -n "Checking kernel configuration... "
 	
 	@# check version of kernel
-	@echo $(KERNELRELEASE) | grep -q -i '^[2-9]\.[4-9]\.' || { \
+	@echo $(KERNELRELEASE) | grep -q -i '^[3-9]\.' || { \
 	    echo "FAILED"; \
 	    echo "Only kernel versions 2.4.x and above are supported."; \
 	    echo "You have $(KERNELRELEASE)."; \
